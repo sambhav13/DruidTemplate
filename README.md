@@ -7,7 +7,12 @@ Supervisor Spec Process to index data into druid using kafka indexing service pl
 > dockerCode 
 - druid - Contains the druid code base and Dockerfile files, docker-compose.yml , environment parameters.
 - specs - contains the supervisor spec to start the supervisor process for starting kafka indexing process and necessary tasks.
+> scripts 
+ - run.sh - Helper scripts
 
+> data 
+ - hourlyData.json - Initial producer data for kafka 
+ - hourlyDelta.json - Delta producer data for kafka
 
 ## How to use
 > 1. Start the Druid cluster either standalone or docker-compose.yaml()
